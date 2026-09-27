@@ -1,0 +1,78 @@
+# ─────────────────────────────────────────────────────────────
+# DIÀLEGS · EQUATIA (tall de prova)
+# Format de text pla (01 §5), pensat perquè Xavi el pugui editar directament:
+#   == id ==          comença un bloc
+#   Nom: text         una línia de diàleg (el nom surt al quadre)
+#   Text sense nom    una línia de narració
+#   >> repte id       en acabar el bloc, ofereix el repte
+#   {nom}             es canvia pel nom del jugador
+# Un bloc "id.fet" es fa servir quan el jugador ja ha superat el repte un cop.
+# Les línies que comencen per # són comentaris.
+# ─────────────────────────────────────────────────────────────
+
+== inici ==
+Equatia, el gran port del sud d'Al-Gerba. Acabes de baixar del Vèrtex pel Camí Reial, amb el salconduit de la Reina a la motxilla.
+Fa calor. El basar fa soroll, les grues de contrapès grinyolen i al port hi ha vaixells de tot l'arxipèlag.
+Diuen que algú ha trucat els contractes i les balances del mercat. Potser és un bon lloc per començar a preguntar.
+Camina amb les fletxes o WASD (o amb el joystick, al mòbil). Apropa't a algú i prem E o Espai per parlar.
+
+== qasim ==
+Qàsim ibn Jabr: Tu deus ser qui ha baixat del Vèrtex amb el salconduit. Al basar no es parla d'una altra cosa.
+Qàsim ibn Jabr: Mira aquests contractes. Els preus no quadren, i ja hi ha mercaders que volen tancar el basar als estrangers.
+Qàsim ibn Jabr: Si demostres amb números que els han manipulat, t'escoltaran. A mi ja no.
+>> repte qasim
+
+== qasim.fet ==
+Qàsim ibn Jabr: Ho veus? Els números no menteixen. Qui els escriu, sí.
+Qàsim ibn Jabr: Tinc una pila de contractes més. Si t'hi veus amb cor, revisa'n un altre.
+>> repte qasim
+
+== venedora ==
+Venedora de dàtils: Dàtils de l'oasi de llevant! Els més dolços de tot Al-Gerba!
+Venedora de dàtils: Els forasters sempre compren la capsa més gran pensant que és la més barata. Tu també?
+>> repte venedora
+
+== venedora.fet ==
+Venedora de dàtils: Tu no et deixes enganyar pel pes de la capsa. Així m'agrada.
+>> repte venedora
+
+== emiliana ==
+Emiliana Rho: El salconduit de la Reina. Interessant.
+Emiliana Rho: Soc la Tresorera Reial. La Corona paga moltes factures en aquest port, i no totes les revisa algú que sàpiga comptar.
+Emiliana Rho: Revisa aquesta. El poder real no el mesures pels vots, {nom}: el mesures pels comptes.
+>> repte emiliana
+
+== emiliana.fet ==
+Emiliana Rho: Correcte. Els números quadren.
+Emiliana Rho: Que el destinatari no hi consti no és cosa teva. De moment.
+>> repte emiliana
+
+== leo ==
+Leo Summi: Ei! Tu ets qui va caure del cel? Jo soc Leo. Pilot, carregador i el millor calculant de cap de tot el moll.
+Leo Summi: Les etiquetes de la càrrega s'han barrejat i el capità surt amb la marea. M'hi dones un cop de mà?
+>> repte leo
+
+== leo.fet ==
+Leo Summi: Ràpid! Gairebé tan ràpid com jo. Gairebé.
+Leo Summi: Quan tingui el vaixell a punt et porto on vulguis. Ara, si vols, hi ha més caixes.
+>> repte leo
+
+== tomba ==
+És la Tomba de Diofant. L'epitafi explica la seva vida com un enigma: qui el resol, en sap l'edat.
+Sota l'epitafi, algú hi ha gravat un missatge nou. Al costat hi ha una marca tènue de color violeta.
+>> repte tomba
+
+== tomba.fet ==
+El missatge del Cercle ja està desxifrat. Però la pedra encara en guarda d'altres, gravats amb la mateixa mà.
+>> repte tomba
+
+== segell ==
+Un arc de pedra volcànica tanca el camí de l'interior. Al centre, un anell d'engranatge brilla tènuement de color cian.
+És un segell: obre la franja de l'interior d'Al-Gerba. En aquesta prova encara no es pot obrir.
+
+== cartell ==
+Camí Reial · puja al Vèrtex. En aquesta prova, el camí queda tancat.
+
+== balanca ==
+La balança pública del mercat. Amb els dos plats buits, un queda més baix que l'altre.
+Algú l'ha trucada. Emiliana Rho, la Tresorera, la mira de lluny sense dir res.

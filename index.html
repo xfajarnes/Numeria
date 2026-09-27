@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#151922">
+  <title>Numèria · Equatia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estil.css">
+  <!-- Motor: Phaser 3, carregat des d'internet (01 §5) -->
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.90.0/dist/phaser.min.js"></script>
+</head>
+<body>
+  <div id="joc"></div>
+
+  <!-- Interfície (per sobre del canvas) -->
+  <div id="hud" hidden>
+    <div class="hud-esq">
+      <span class="xip" title="Corones"><span class="ic">◈</span> <span id="hud-corones">0</span></span>
+      <span class="xip" id="hud-nivell"></span>
+      <span class="xip nuvol" id="hud-nuvol" title="">◇</span>
+    </div>
+    <button type="button" id="boto-quadern" class="xip boto">Quadern</button>
+    <div id="pista-tecla" hidden></div>
+    <div id="joystick" hidden><div class="pom"></div></div>
+    <button type="button" id="boto-accio" disabled>·</button>
+  </div>
+
+  <div id="capa-dialeg" class="capa" hidden></div>
+  <div id="capa-repte" class="capa fosca" hidden></div>
+  <div id="capa-quadern" class="capa fosca" hidden></div>
+  <div id="capa-inici" class="capa fosca"><div class="targeta inici"><h1>Numèria</h1><p class="sub">Carregant…</p></div></div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
